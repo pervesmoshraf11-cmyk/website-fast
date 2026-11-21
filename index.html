@@ -1,53 +1,87 @@
-
 <!DOCTYPE html>
 <html lang="bn">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MyShop - Premium Online Shopping</title>
+    <!-- Premium Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
     <div class="logo">My<span>Shop.</span></div>
-    <input type="text" id="search" placeholder="Search products...">
-    <button id="cartButton">Cart 🛒 <span id="cartCount">0</span></button>
+    <div class="search-wrapper">
+        <input type="text" id="search" placeholder="Search premium products...">
+    </div>
+    <button id="cartButton">
+        <span>Cart 🛒</span>
+        <span id="cartCount">0</span>
+    </button>
 </header>
 
 <section class="hero">
-    <div>
-        <p class="tagline">WELCOME TO MYSHOP</p>
-        <h1>Discover Your<br>Perfect Style.</h1>
-        <p>Shop your favorite products at one place.</p>
-        <a href="#products" class="shop-btn">Shop Now →</a>
+    <div class="hero-content">
+        <span class="tagline">✨ WELCOME TO MYSHOP</span>
+        <h1>Discover Your<br><span>Perfect Style.</span></h1>
+        <p>Curated luxury and everyday essentials—shop your favorite products effortlessly at one place.</p>
+        <a href="#products" class="shop-btn">Explore Collection →</a>
     </div>
-    <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800" alt="Shopping">
+    <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800" alt="Shopping">
+    </div>
 </section>
 
 <section id="products">
-    <h2>Our Products</h2>
-    <p class="subtitle">Explore our popular collection</p>
+    <div class="section-header">
+        <h2>Our Products</h2>
+        <p class="subtitle">Explore our handpicked popular collection</p>
+    </div>
     <div class="product-grid" id="productGrid"></div>
 </section>
 
 <section class="features">
-    <div>🚚 <b>Easy Ordering</b></div>
-    <div>💚 <b>Quality Products</b></div>
-    <div>🔒 <b>Simple Shopping</b></div>
+    <div class="feature-card">
+        <span class="feature-icon">🚚</span>
+        <div>
+            <b>Fast & Easy Ordering</b>
+            <small>Quick checkout experience</small>
+        </div>
+    </div>
+    <div class="feature-card">
+        <span class="feature-icon">💎</span>
+        <div>
+            <b>Premium Quality</b>
+            <small>100% authentic products</small>
+        </div>
+    </div>
+    <div class="feature-card">
+        <span class="feature-icon">🔒</span>
+        <div>
+            <b>Secure Shopping</b>
+            <small>Safe & reliable service</small>
+        </div>
+    </div>
 </section>
 
 <footer>
-    <h2>MyShop.</h2>
+    <h2>My<span>Shop.</span></h2>
     <p>© 2026 MyShop. All Rights Reserved.</p>
 </footer>
 
 <div id="cartPanel" class="cart-panel">
-    <button id="closeCart" class="close">✕</button>
-    <h2>Your Shopping Cart</h2>
+    <div class="cart-header">
+        <h2>Your Shopping Cart</h2>
+        <button id="closeCart" class="close">✕</button>
+    </div>
     <div id="cartItems"></div>
-    <h3 id="total">Total: ৳0</h3>
-    <button id="orderButton">Place Order</button>
+    <div class="cart-footer">
+        <h3 id="total">Total: ৳0</h3>
+        <button id="orderButton">Place Order →</button>
+    </div>
 </div>
 
 <script src="script.js"></script>
